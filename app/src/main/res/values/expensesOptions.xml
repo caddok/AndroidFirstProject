@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expenses_options_array">
+        <item>Electricity</item>
+        <item>Water</item>
+        <item>Rent</item>
+        <item>Heating</item>
+        <item>Utilities</item>
+        <item>Other taxes</item>
+        <item>Subscriptions</item>
+        <item>Other</item>
+    </string-array>
+</resources>

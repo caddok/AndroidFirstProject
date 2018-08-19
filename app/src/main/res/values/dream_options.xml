@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dream_categories">
+        <item>Select category</item>
+        <item>Holiday</item>
+        <item>Tech</item>
+        <item>Car</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dreams.create.CreateDreamFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner_dream_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textSize="24sp"
+            android:inputType="text"
+            android:hint="Enter name"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/spinner_dream_categories"
+            android:id="@+id/dream_name"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="20sp"
+            android:inputType="number"
+            android:hint="Enter price"
+            android:layout_below="@id/dream_name"
+            android:id="@+id/dream_cost"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_marginTop="20sp"
+            android:id="@+id/period"
+            android:layout_below="@id/dream_cost"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/period"
+            android:text="Create"
+            android:id="@+id/create_dream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

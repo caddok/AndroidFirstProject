@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "714073427342",
+    "firebase_url": "https://android-solo-project.firebaseio.com",
+    "project_id": "android-solo-project",
+    "storage_bucket": "android-solo-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714073427342:android:a378712c3340b364",
+        "android_client_info": {
+          "package_name": "com.example.georgi.allaboutthemoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714073427342-mfhi3ogajcm5qr29auqpabidecp7s8b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.georgi.allaboutthemoney",
+            "certificate_hash": "00c9bdef52afeac4d4523b83c436e1f4ac29df3e"
+          }
+        },
+        {
+          "client_id": "714073427342-t99jli9ptsp5hh17olb53qi75mifi8ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbY22MT6uMd5Y4D1KCpuqTjOCPAE_F8Y8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714073427342-t99jli9ptsp5hh17olb53qi75mifi8ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

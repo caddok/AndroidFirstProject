@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="daily_expenses_options_array">
+        <item>Select category</item>
+        <item>Groceries</item>
+        <item>Clothing</item>
+        <item>Cigarettes</item>
+        <item>Drinks</item>
+        <item>Tech</item>
+        <item>Take outs</item>
+        <item>Fun activities</item>
+        <item>Other</item>
+    </string-array>
+</resources>
