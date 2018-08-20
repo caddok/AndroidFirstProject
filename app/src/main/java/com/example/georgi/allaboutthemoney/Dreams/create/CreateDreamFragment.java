@@ -82,7 +82,7 @@ public class CreateDreamFragment extends Fragment implements View.OnClickListene
         String dreamPriceText = String.valueOf(mDreamPrice.getText());
         if (dreamPriceText.equals("")) {
             Toast.makeText(getContext(),NO_PRICE_TOAST , Toast.LENGTH_SHORT).show();
-        } else if (mDreamName.getText().equals("")) {
+        } else if (mDreamName.getText().toString().equals("")) {
             Toast.makeText(getContext(), NO_NAME_TOAST, Toast.LENGTH_SHORT).show();
         } else if (mDreamCategoriesSpinner.getSelectedItemPosition() == 0) {
             Toast.makeText(getContext(), NO_CATEGORY_TOAST, Toast.LENGTH_SHORT).show();
@@ -91,7 +91,7 @@ public class CreateDreamFragment extends Fragment implements View.OnClickListene
         } else {
             dream.cost = Double.parseDouble(dreamPriceText);
             dream.name = String.valueOf(mDreamName.getText());
-            dream.progress = 0;
+            dream.progress = 0.0;
             mDreamFirebaseRepository.addDream(dream,newDream->{
 
             });

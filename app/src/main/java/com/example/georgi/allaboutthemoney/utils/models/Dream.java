@@ -11,10 +11,10 @@ public class Dream {
         //public constructor needed for firebase
     }
 
-    public Dream(String name, double cost, String period, String category) {
+    public Dream(String name, double cost,double progress, String period, String category) {
         this.name = name;
         this.cost = cost;
-        this.progress = 0;
+        this.progress = progress;
         this.period = period;
         this.category = category;
     }
@@ -28,8 +28,6 @@ public class Dream {
                 + "Cost: " + cost +
                 "\n"
                 + "Due date: " + period +
-                "\n" +
-                + progress +
                 "\n";
     }
 }

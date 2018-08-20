@@ -41,9 +41,6 @@ public class MonthlyReportFragment extends Fragment {
         mMonthlyReport = view.findViewById(R.id.lv_monthly_report);
         mMonthlyAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1);
         mMonthlyReport.setAdapter(mMonthlyAdapter);
-        if (getArguments() != null){
-            mQueryMonth = getArguments().getInt("monthNumber");
-        }
         mExpenseRepository = FirebaseRepository.getExpenseRepositoryInstance();
         mExpenseRepository.getAllFromQuery(expenses -> {
             for (Expense expens : expenses) {
@@ -58,5 +55,7 @@ public class MonthlyReportFragment extends Fragment {
         });
         return view;
     }
-
+    public  void getMonth(int month){
+        mQueryMonth = month;
+    }
 }

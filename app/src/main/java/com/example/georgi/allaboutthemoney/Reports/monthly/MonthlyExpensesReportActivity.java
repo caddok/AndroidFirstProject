@@ -1,18 +1,17 @@
 package com.example.georgi.allaboutthemoney.Reports.monthly;
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.georgi.allaboutthemoney.utils.navigation.BaseDrawerActivity;
 import com.example.georgi.allaboutthemoney.R;
-import com.example.georgi.allaboutthemoney.utils.CalendarActivity;
+
 
 public class MonthlyExpensesReportActivity extends BaseDrawerActivity implements AdapterView.OnItemSelectedListener {
     public static final long IDENTIFIER = 580;
@@ -57,10 +56,7 @@ public class MonthlyExpensesReportActivity extends BaseDrawerActivity implements
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         if(position != 0) {
-            Bundle monthBundle = new Bundle();
-            monthBundle.putInt("monthNumber", position);
-            mChosenDate.setText((CharSequence) mMonthSpinner.getItemAtPosition(position));
-            mMonthlyReportFragment.setArguments(monthBundle);
+            mMonthlyReportFragment.getMonth(position);
         }
     }
 

@@ -8,22 +8,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/money_left"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content" />
 
-        <TextView
-            android:textSize="24sp"
-            android:layout_below="@id/money_left"
-            android:id="@+id/allocate_funds"
-            android:text="Click on a dream to allocate the rest of your money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <ListView
             android:clickable="true"
-            android:layout_below="@id/allocate_funds"
             android:id="@+id/lv_dreams"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
